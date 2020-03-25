@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Cosmos
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
