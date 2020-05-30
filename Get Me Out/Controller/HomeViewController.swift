@@ -12,7 +12,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    let cellScale:CGFloat=0.7
+    
     var categories = [
             Category(image: UIImage(named: "Entertainment")!, title: "Entertainment", colour: UIColor(red: 63/255.0, green: 71/255.0, blue: 88/255.0, alpha: 0.8)),
              Category(image: UIImage(named: "hotel")!, title: "Hotels", colour: UIColor(red: 240/255.0, green: 133/255.0, blue: 91/255.0, alpha: 0.8)),
@@ -26,23 +26,20 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         collectionView.delegate=self
         collectionView.dataSource=self
-//        let screenSize=UIScreen.main.bounds.size
-//        let cellWidth=floor(screenSize.width * cellScale)
-//        let cellHight=floor(screenSize.height * cellScale)
-//        let insetX=(view.bounds.width - cellWidth) / 0.2
-//        let insetY=(view.bounds.height - cellHight) / 0.2
-//        let layout=collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-//        layout.itemSize = CGSize(width: cellWidth, height: cellHight)
-//        collectionView.contentInset = UIEdgeInsets(top: insetY, left: insetX, bottom: insetY, right: insetX)
-
-           
+        let flowLayout = UPCarouselFlowLayout()
+        flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.size.width - 60.0, height: collectionView.frame.size.height-160)
+        flowLayout.scrollDirection = .horizontal
+        flowLayout.sideItemScale = 0.8
+        flowLayout.sideItemAlpha = 1.0
+        flowLayout.spacingMode = .fixed(spacing: 4.0)
+        collectionView.collectionViewLayout = flowLayout
     }
     
 
     
 }
 
-extension HomeViewController:UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+extension HomeViewController:UICollectionViewDataSource,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         categories.count
     }
@@ -55,30 +52,8 @@ extension HomeViewController:UICollectionViewDataSource,UICollectionViewDelegate
     }
     
 
-   
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let size=collectionView.frame.size
-        return CGSize(width: size.width*cellScale, height: size.height*cellScale)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 30)
-    }
-    
-
     
 
 }
-extension HomeViewController:UIScrollViewDelegate,UICollectionViewDelegate{
-        func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-//            let layout = self.collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
-//               let cellWithIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
-//               var offset = targetContentOffset.pointee
-//               let index = (offset.x + scrollView.contentInset.left) / cellWithIncludingSpacing
-//               let roundedIndex = round(index)
-//               offset = CGPoint(x: roundedIndex * cellWithIncludingSpacing - scrollView.contentInset.left, y: scrollView.contentInset.top)
-//               targetContentOffset.pointee = offset
-        
-           }
-}
+
+

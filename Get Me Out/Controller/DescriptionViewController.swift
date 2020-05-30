@@ -9,9 +9,35 @@
 import UIKit
 
 class DescriptionViewController: UIViewController {
+    @IBOutlet weak var rateView: UIView!{
+        didSet{
+            self.rateView.layer.cornerRadius = 15.0
+        }
+    }
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var menuButton: UIButton!
+    {
+        didSet{
+            self.menuButton.circle()
+        }
+    }
+    @IBOutlet weak var locationButton: UIButton!{
+        didSet{
+            self.locationButton.circle()
+        }
+    }
+    @IBOutlet weak var numberButton: UIButton!{
+        didSet{
+            self.numberButton.circle()
+        }
+    }
+    @IBOutlet weak var favouriteButton: UIButton!{
+        didSet{
+            self.favouriteButton.circle()
+        }
+    }
     
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var tableView: UITableView!
@@ -74,7 +100,6 @@ extension DescriptionViewController:UICollectionViewDelegate,UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! DescriptionCollectionViewCell
-        cell.editCellView()
         return cell
     }
     
@@ -86,6 +111,7 @@ extension DescriptionViewController:UICollectionViewDelegate,UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0.0
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0.0
     }

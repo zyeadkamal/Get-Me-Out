@@ -11,10 +11,8 @@ import UIKit
 class DescriptionCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imagePlace: UIImageView!
+  
     
-    
-    func editCellView(){
-        imagePlace.layer.cornerRadius=imagePlace.frame.height/5
-    }
+   
     
 }
