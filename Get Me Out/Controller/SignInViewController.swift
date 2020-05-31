@@ -12,12 +12,23 @@ import Lottie
 class SignInViewController: UIViewController,UITextFieldDelegate{
     let animationView = AnimationView()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         startAnimation()
         emailTextField.setBottomBorder()
         passwordTextField.setBottomBorder()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")}
+        navBar.hide()
+
+    }
+    
+    
     @IBOutlet weak var lottieView: UIView!
     
     @IBOutlet weak var emailTextField: UITextField!

@@ -39,6 +39,8 @@
 		FA8C77E124820F000042209A /* ExplainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C77E024820F000042209A /* ExplainTableViewCell.swift */; };
 		FA8C77E324820F8B0042209A /* ExplainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C77E224820F8B0042209A /* ExplainCollectionViewCell.swift */; };
 		FAB6AD3B248403480086439E /* Date+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6AD3A248403480086439E /* Date+extensions.swift */; };
+		FAB6AD3D24840D2D0086439E /* NavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6AD3C24840D2D0086439E /* NavigationController+extension.swift */; };
+		FAB6AD3F2484105B0086439E /* TabBar+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6AD3E2484105B0086439E /* TabBar+extension.swift */; };
 		FAD3ED64242131FE0061B1A5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3ED63242131FE0061B1A5 /* MapViewController.swift */; };
 		FAF1CE33243A74EF00F72993 /* Cosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF1CE32243A74EF00F72993 /* Cosmos.framework */; };
 		FAF1CE35243A80D400F72993 /* CEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1CE34243A80D400F72993 /* CEventViewController.swift */; };
@@ -83,6 +85,8 @@
 		FA8C77E024820F000042209A /* ExplainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainTableViewCell.swift; sourceTree = "<group>"; };
 		FA8C77E224820F8B0042209A /* ExplainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAB6AD3A248403480086439E /* Date+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extensions.swift"; sourceTree = "<group>"; };
+		FAB6AD3C24840D2D0086439E /* NavigationController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationController+extension.swift"; sourceTree = "<group>"; };
+		FAB6AD3E2484105B0086439E /* TabBar+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBar+extension.swift"; sourceTree = "<group>"; };
 		FAD3ED63242131FE0061B1A5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "Get Me Out/View/MapViewController.swift"; sourceTree = SOURCE_ROOT; };
 		FAF1CE32243A74EF00F72993 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF1CE34243A80D400F72993 /* CEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEventViewController.swift; sourceTree = "<group>"; };
@@ -158,14 +162,14 @@
 		FA2C48FB241ABB9B0032C8AA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FA68B8EB247E8EEC00B7B9D6 /* SignInViewController.swift */,
+				FA68B8ED247E974000B7B9D6 /* SignUpViewController.swift */,
 				FA8C77DE24820D6E0042209A /* ExplainTableViewController.swift */,
 				FAF70357241BDDBA008A872C /* DescriptionViewController.swift */,
 				FAD3ED63242131FE0061B1A5 /* MapViewController.swift */,
 				FA4A6BBA242A87A5008C9B8C /* HomeViewController.swift */,
 				FA3459A2243155EF00EE52A2 /* TypeViewController.swift */,
 				FAF1CE34243A80D400F72993 /* CEventViewController.swift */,
-				FA68B8EB247E8EEC00B7B9D6 /* SignInViewController.swift */,
-				FA68B8ED247E974000B7B9D6 /* SignUpViewController.swift */,
 				FA68B8F3247ECB3500B7B9D6 /* EditProfileViewController.swift */,
 				FA1606192480058A00FCE56E /* SettingsViewController.swift */,
 			);
@@ -202,6 +206,8 @@
 				FA16061D2480084800FCE56E /* Settings.swift */,
 				FA16061F248011DD00FCE56E /* UIImage+extensions.swift */,
 				FAB6AD3A248403480086439E /* Date+extensions.swift */,
+				FAB6AD3C24840D2D0086439E /* NavigationController+extension.swift */,
+				FAB6AD3E2484105B0086439E /* TabBar+extension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 				FA68B8F4247ECB3500B7B9D6 /* EditProfileViewController.swift in Sources */,
 				FA68B8EC247E8EEC00B7B9D6 /* SignInViewController.swift in Sources */,
 				FA3459A52431570000EE52A2 /* TypeCollectionViewCell.swift in Sources */,
+				FAB6AD3F2484105B0086439E /* TabBar+extension.swift in Sources */,
 				FAF7037D241C2F25008A872C /* DescriptionCollectionViewCell.swift in Sources */,
 				FA2C47A1243FB34E00551C85 /* DateComponent.swift in Sources */,
 				FA3459A3243155EF00EE52A2 /* TypeViewController.swift in Sources */,
@@ -337,6 +344,7 @@
 				FAD3ED64242131FE0061B1A5 /* MapViewController.swift in Sources */,
 				FA344686243F7ECA000A8D36 /* AlertService.swift in Sources */,
 				FA3459A7243158A500EE52A2 /* Type.swift in Sources */,
+				FAB6AD3D24840D2D0086439E /* NavigationController+extension.swift in Sources */,
 				FA8BB847241D42DA005AC867 /* CommentTableViewCell.swift in Sources */,
 				FAB6AD3B248403480086439E /* Date+extensions.swift in Sources */,
 				FA2ADA14241A4BD9003059F7 /* AppDelegate.swift in Sources */,

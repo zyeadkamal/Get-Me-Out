@@ -9,6 +9,18 @@
 import UIKit
 
 class DescriptionViewController: UIViewController {
+    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")
+//        }
+//        guard let tabBar = tabBarController?.tabBar else { fatalError("TabBar controller does not exist.")
+//               }
+//        navBar.firstViewAfterTabBar()
+//        tabBar.firstViewAfterTabBar()
+//    }
+    
+    
     @IBOutlet weak var rateView: UIView!{
         didSet{
             self.rateView.layer.cornerRadius = 15.0
