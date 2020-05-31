@@ -19,7 +19,6 @@
 		FA2ADA1E241A4BD9003059F7 /* Get_Me_Out.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA2ADA1C241A4BD9003059F7 /* Get_Me_Out.xcdatamodeld */; };
 		FA2ADA20241A4BDB003059F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2ADA1F241A4BDB003059F7 /* Assets.xcassets */; };
 		FA2ADA23241A4BDB003059F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2ADA21241A4BDB003059F7 /* LaunchScreen.storyboard */; };
-		FA2C479F243FB15300551C85 /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C479E243FB15300551C85 /* Date+extension.swift */; };
 		FA2C47A1243FB34E00551C85 /* DateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C47A0243FB34E00551C85 /* DateComponent.swift */; };
 		FA344686243F7ECA000A8D36 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA344685243F7ECA000A8D36 /* AlertService.swift */; };
 		FA3459A3243155EF00EE52A2 /* TypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3459A2243155EF00EE52A2 /* TypeViewController.swift */; };
@@ -39,6 +38,7 @@
 		FA8C77DF24820D6E0042209A /* ExplainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C77DE24820D6E0042209A /* ExplainTableViewController.swift */; };
 		FA8C77E124820F000042209A /* ExplainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C77E024820F000042209A /* ExplainTableViewCell.swift */; };
 		FA8C77E324820F8B0042209A /* ExplainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C77E224820F8B0042209A /* ExplainCollectionViewCell.swift */; };
+		FAB6AD3B248403480086439E /* Date+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6AD3A248403480086439E /* Date+extensions.swift */; };
 		FAD3ED64242131FE0061B1A5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3ED63242131FE0061B1A5 /* MapViewController.swift */; };
 		FAF1CE33243A74EF00F72993 /* Cosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF1CE32243A74EF00F72993 /* Cosmos.framework */; };
 		FAF1CE35243A80D400F72993 /* CEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1CE34243A80D400F72993 /* CEventViewController.swift */; };
@@ -63,7 +63,6 @@
 		FA2ADA1F241A4BDB003059F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2ADA22241A4BDB003059F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA2ADA24241A4BDB003059F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA2C479E243FB15300551C85 /* Date+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extension.swift"; sourceTree = "<group>"; };
 		FA2C47A0243FB34E00551C85 /* DateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponent.swift; sourceTree = "<group>"; };
 		FA344685243F7ECA000A8D36 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		FA3459A2243155EF00EE52A2 /* TypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		FA8C77DE24820D6E0042209A /* ExplainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainTableViewController.swift; sourceTree = "<group>"; };
 		FA8C77E024820F000042209A /* ExplainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainTableViewCell.swift; sourceTree = "<group>"; };
 		FA8C77E224820F8B0042209A /* ExplainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAB6AD3A248403480086439E /* Date+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extensions.swift"; sourceTree = "<group>"; };
 		FAD3ED63242131FE0061B1A5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "Get Me Out/View/MapViewController.swift"; sourceTree = SOURCE_ROOT; };
 		FAF1CE32243A74EF00F72993 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF1CE34243A80D400F72993 /* CEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEventViewController.swift; sourceTree = "<group>"; };
@@ -196,12 +196,12 @@
 				FA4A6BB5242A72D9008C9B8C /* Category.swift */,
 				FA3459A6243158A500EE52A2 /* Type.swift */,
 				FA344685243F7ECA000A8D36 /* AlertService.swift */,
-				FA2C479E243FB15300551C85 /* Date+extension.swift */,
 				FA2C47A0243FB34E00551C85 /* DateComponent.swift */,
 				FA68B8EF247E9DAF00B7B9D6 /* TextField+extensions.swift */,
 				FA68B8F1247EA9F200B7B9D6 /* Button+extensions.swift */,
 				FA16061D2480084800FCE56E /* Settings.swift */,
 				FA16061F248011DD00FCE56E /* UIImage+extensions.swift */,
+				FAB6AD3A248403480086439E /* Date+extensions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -338,6 +338,7 @@
 				FA344686243F7ECA000A8D36 /* AlertService.swift in Sources */,
 				FA3459A7243158A500EE52A2 /* Type.swift in Sources */,
 				FA8BB847241D42DA005AC867 /* CommentTableViewCell.swift in Sources */,
+				FAB6AD3B248403480086439E /* Date+extensions.swift in Sources */,
 				FA2ADA14241A4BD9003059F7 /* AppDelegate.swift in Sources */,
 				FA2ADA16241A4BD9003059F7 /* SceneDelegate.swift in Sources */,
 				FA68B8F2247EA9F200B7B9D6 /* Button+extensions.swift in Sources */,
@@ -346,7 +347,6 @@
 				FA8C77DF24820D6E0042209A /* ExplainTableViewController.swift in Sources */,
 				FA68B8F0247E9DAF00B7B9D6 /* TextField+extensions.swift in Sources */,
 				FA2ADA1E241A4BD9003059F7 /* Get_Me_Out.xcdatamodeld in Sources */,
-				FA2C479F243FB15300551C85 /* Date+extension.swift in Sources */,
 				FA4A6BB6242A72D9008C9B8C /* Category.swift in Sources */,
 				FA4A6BBB242A87A5008C9B8C /* HomeViewController.swift in Sources */,
 				FA4A6BB9242A8757008C9B8C /* HomeCollectionViewCell.swift in Sources */,

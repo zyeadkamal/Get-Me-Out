@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2VG-S1-oBV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8YH-7o-VPL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -669,7 +669,7 @@
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Entertainment" translatesAutoresizingMaskIntoConstraints="NO" id="RyA-4L-It2">
-                                                                <rect key="frame" x="0.0" y="0.0" width="169.00000000000011" height="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="169" height="100"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="100" id="E89-t3-T00"/>
                                                                 </constraints>
@@ -1102,7 +1102,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Entertainment" translatesAutoresizingMaskIntoConstraints="NO" id="eDH-jm-KuH">
-                                                    <rect key="frame" x="20" y="20" width="314.00000000000011" height="681"/>
+                                                    <rect key="frame" x="20" y="20" width="314" height="681"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k35-yB-sLu">
                                                     <rect key="frame" x="20" y="20" width="314" height="681"/>
