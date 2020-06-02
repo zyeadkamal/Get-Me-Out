@@ -29,7 +29,7 @@ class ExplainTableViewController: UITableViewController {
         guard let tabBar = tabBarController?.tabBar else { fatalError("TabBar controller does not exist.")
                }
         navBar.firstViewAfterTabBar()
-        navigationItem.largeTitleDisplayMode = .always
+        navigationItem.largeTitleDisplayMode = .automatic
         tabBar.firstViewAfterTabBar()
         
     }

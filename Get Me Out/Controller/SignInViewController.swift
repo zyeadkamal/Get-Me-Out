@@ -12,7 +12,7 @@ import Lottie
 class SignInViewController: UIViewController,UITextFieldDelegate{
     let animationView = AnimationView()
     
-    
+    let service = Service()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +36,31 @@ class SignInViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func signInBtn(_ sender: UIButton) {
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        if email.isEmpty || password.isEmpty{
+                   let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                          
+                          let alert = AlertService.showAlert(style: .alert, title: "Please fill all fields", message: nil, actions: [alertAction], completion: nil)
+                          present(alert, animated: true, completion: nil)
+               }
+                
+        else{
+        service.fetchSignInData(email: email, password: password) { (obj) in
+            if obj.statusCode == 200{
+                print("sucess")
+             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                   let nextViewController = storyBoard.instantiateViewController(withIdentifier: "nextView") as! UITabBarController
+                   nextViewController.modalPresentationStyle = .fullScreen
+                   self.present(nextViewController, animated:true, completion:nil)
+            }
+        }
+        
+    }
+        
+        
+            
     }
     
     @IBAction func signInFaceBook(_ sender: UIButton) {
@@ -60,4 +85,10 @@ class SignInViewController: UIViewController,UITextFieldDelegate{
     }
     
 }
+
+
+
+
+
+
 

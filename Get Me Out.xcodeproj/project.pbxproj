@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2D611F568C699D1CB3C0C877 /* Pods_Get_Me_Out.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0182CB0C5C0DE1D09F0B743 /* Pods_Get_Me_Out.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		FA11D14524851505003944B0 /* ServiceNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11D14424851505003944B0 /* ServiceNetworking.swift */; };
+		FA11D1472485679E003944B0 /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11D1462485679E003944B0 /* String+extensions.swift */; };
 		FA160616247FDD4800FCE56E /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = FA160615247FDD4800FCE56E /* location.json */; };
 		FA16061A2480058A00FCE56E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1606192480058A00FCE56E /* SettingsViewController.swift */; };
 		FA16061C2480070400FCE56E /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA16061B2480070400FCE56E /* SettingsTableViewCell.swift */; };
@@ -28,6 +30,7 @@
 		FA4A6BB9242A8757008C9B8C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A6BB8242A8757008C9B8C /* HomeCollectionViewCell.swift */; };
 		FA4A6BBB242A87A5008C9B8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A6BBA242A87A5008C9B8C /* HomeViewController.swift */; };
 		FA56D906247B911E007C860E /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56D905247B911E007C860E /* UPCarouselFlowLayout.swift */; };
+		FA61CC7D248635990066454C /* CodableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61CC7C248635990066454C /* CodableData.swift */; };
 		FA68B8EC247E8EEC00B7B9D6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68B8EB247E8EEC00B7B9D6 /* SignInViewController.swift */; };
 		FA68B8EE247E974000B7B9D6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68B8ED247E974000B7B9D6 /* SignUpViewController.swift */; };
 		FA68B8F0247E9DAF00B7B9D6 /* TextField+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68B8EF247E9DAF00B7B9D6 /* TextField+extensions.swift */; };
@@ -52,6 +55,8 @@
 		5AFC499CEB49D6303F709408 /* Pods-Get Me Out.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get Me Out.release.xcconfig"; path = "Target Support Files/Pods-Get Me Out/Pods-Get Me Out.release.xcconfig"; sourceTree = "<group>"; };
 		6F6C4F730905213C625E1031 /* Pods-Get Me Out.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get Me Out.debug.xcconfig"; path = "Target Support Files/Pods-Get Me Out/Pods-Get Me Out.debug.xcconfig"; sourceTree = "<group>"; };
 		F0182CB0C5C0DE1D09F0B743 /* Pods_Get_Me_Out.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Get_Me_Out.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA11D14424851505003944B0 /* ServiceNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceNetworking.swift; sourceTree = "<group>"; };
+		FA11D1462485679E003944B0 /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
 		FA160615247FDD4800FCE56E /* location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location.json; sourceTree = "<group>"; };
 		FA1606192480058A00FCE56E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FA16061B2480070400FCE56E /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -74,6 +79,7 @@
 		FA4A6BB8242A8757008C9B8C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA4A6BBA242A87A5008C9B8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA56D905247B911E007C860E /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		FA61CC7C248635990066454C /* CodableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableData.swift; sourceTree = "<group>"; };
 		FA68B8EB247E8EEC00B7B9D6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FA68B8ED247E974000B7B9D6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FA68B8EF247E9DAF00B7B9D6 /* TextField+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+extensions.swift"; sourceTree = "<group>"; };
@@ -202,12 +208,15 @@
 				FA344685243F7ECA000A8D36 /* AlertService.swift */,
 				FA2C47A0243FB34E00551C85 /* DateComponent.swift */,
 				FA68B8EF247E9DAF00B7B9D6 /* TextField+extensions.swift */,
-				FA68B8F1247EA9F200B7B9D6 /* Button+extensions.swift */,
 				FA16061D2480084800FCE56E /* Settings.swift */,
 				FA16061F248011DD00FCE56E /* UIImage+extensions.swift */,
-				FAB6AD3A248403480086439E /* Date+extensions.swift */,
 				FAB6AD3C24840D2D0086439E /* NavigationController+extension.swift */,
+				FAB6AD3A248403480086439E /* Date+extensions.swift */,
 				FAB6AD3E2484105B0086439E /* TabBar+extension.swift */,
+				FA11D1462485679E003944B0 /* String+extensions.swift */,
+				FA68B8F1247EA9F200B7B9D6 /* Button+extensions.swift */,
+				FA11D14424851505003944B0 /* ServiceNetworking.swift */,
+				FA61CC7C248635990066454C /* CodableData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,7 +342,9 @@
 				FA8C77E124820F000042209A /* ExplainTableViewCell.swift in Sources */,
 				FA68B8F4247ECB3500B7B9D6 /* EditProfileViewController.swift in Sources */,
 				FA68B8EC247E8EEC00B7B9D6 /* SignInViewController.swift in Sources */,
+				FA11D1472485679E003944B0 /* String+extensions.swift in Sources */,
 				FA3459A52431570000EE52A2 /* TypeCollectionViewCell.swift in Sources */,
+				FA61CC7D248635990066454C /* CodableData.swift in Sources */,
 				FAB6AD3F2484105B0086439E /* TabBar+extension.swift in Sources */,
 				FAF7037D241C2F25008A872C /* DescriptionCollectionViewCell.swift in Sources */,
 				FA2C47A1243FB34E00551C85 /* DateComponent.swift in Sources */,
@@ -354,6 +365,7 @@
 				FAF1CE35243A80D400F72993 /* CEventViewController.swift in Sources */,
 				FA8C77DF24820D6E0042209A /* ExplainTableViewController.swift in Sources */,
 				FA68B8F0247E9DAF00B7B9D6 /* TextField+extensions.swift in Sources */,
+				FA11D14524851505003944B0 /* ServiceNetworking.swift in Sources */,
 				FA2ADA1E241A4BD9003059F7 /* Get_Me_Out.xcdatamodeld in Sources */,
 				FA4A6BB6242A72D9008C9B8C /* Category.swift in Sources */,
 				FA4A6BBB242A87A5008C9B8C /* HomeViewController.swift in Sources */,
