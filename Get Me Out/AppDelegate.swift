@@ -8,15 +8,20 @@
 
 import UIKit
 import CoreData
-import Cosmos
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window:UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        if Helper.fetchToken() != nil{
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "nextView") as! UITabBarController
+            nextViewController.modalPresentationStyle = .fullScreen
+            window?.rootViewController = nextViewController
+        }
+        
         return true
     }
 

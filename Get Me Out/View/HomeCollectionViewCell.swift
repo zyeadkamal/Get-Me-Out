@@ -21,9 +21,9 @@ class HomeCollectionViewCell:UICollectionViewCell{
     
     func didUpdate(){
         if let category=category{
-            image.image=category.image
-            backGroundColour.backgroundColor=category.colour
-            name.text=category.title
+//            image.image=category.image
+//            backGroundColour.backgroundColor=category.colour
+//            name.text=category.title
         }
         else{
             image.image=nil

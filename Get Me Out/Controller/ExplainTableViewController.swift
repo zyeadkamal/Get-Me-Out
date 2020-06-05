@@ -9,17 +9,27 @@
 import UIKit
 
 class ExplainTableViewController: UITableViewController {
-
     
+    var categories = [CategoryElement]()
+    
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
        // animateTable()
+        
         tableView.separatorStyle = .none
+        DispatchQueue.main.async {
+              Service.shared.fetchGenericData(urlString: "http://v1.khargny.com/api/home_categories?lang=ar") { (info:Category) in
+                      if info.statusCode == 200{
+                          self.categories = info.categories
+                          self.tableView.reloadData()
+                      }
+                  }
+        }
+      
     }
 
-    
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -43,38 +53,28 @@ class ExplainTableViewController: UITableViewController {
     
     
     
-//    func animateTable() {
-//              tableView.reloadData()
-//              let cells = tableView.visibleCells
-//    
-//              let tableViewHeight = tableView.bounds.size.height
-//    
-//              for cell in cells {
-//                  cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
-//              }
-//    
-//              var delayCounter = 0
-//              for cell in cells {
-//                  UIView.animate(withDuration: 1.75, delay: Double(delayCounter) * 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
-//                      cell.transform = CGAffineTransform.identity
-//                  }, completion: nil)
-//                  delayCounter += 1
-//              }
-//          }
+    
+    
 
 
   // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 8
+        return categories.count
+        
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ExplainTableViewCell
-
-       
+        
+            cell.places = self.categories[indexPath.row].places
+            
+        
+            cell.categoryName.text = self.categories[indexPath.row].name
+        
+        
         return cell
     }
 
@@ -84,4 +84,37 @@ class ExplainTableViewController: UITableViewController {
         return 200
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
+//    func animateTable() {
+//              tableView.reloadData()
+//              let cells = tableView.visibleCells
+//
+//              let tableViewHeight = tableView.bounds.size.height
+//
+//              for cell in cells {
+//                  cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
+//              }
+//
+//              var delayCounter = 0
+//              for cell in cells {
+//                  UIView.animate(withDuration: 1.75, delay: Double(delayCounter) * 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+//                      cell.transform = CGAffineTransform.identity
+//                  }, completion: nil)
+//                  delayCounter += 1
+//              }
+//          }
