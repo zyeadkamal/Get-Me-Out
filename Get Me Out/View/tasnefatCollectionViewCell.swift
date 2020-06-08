@@ -17,10 +17,5 @@ class tasnefatCollectionViewCell: UICollectionViewCell {
         // Initialization code
 
     }
-    @IBAction func cellButton(_ sender: UIButton) {
-        print("zyead")
-        
-        
-    }
     
 }

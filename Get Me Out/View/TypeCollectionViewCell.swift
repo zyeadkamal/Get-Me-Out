@@ -14,21 +14,7 @@ class TypeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var rate: CosmosView!
+    @IBOutlet weak var numOfRater: UILabel!
     
-    var type:Type?{
-        didSet{
-            didupdate()
-        }
-    }
-    
-    
-    func didupdate(){
-        if let type = type{
-            categoryImage.image = type.image
-            name.text=type.name
-            rate.rating=type.rate
-        }
-        contentView.backgroundColor = .white
-    }
-    
+
 }

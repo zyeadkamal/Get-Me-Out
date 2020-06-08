@@ -13,7 +13,7 @@ struct SignIn: Codable {
     let user: User
     let statusCode: Int
     let key: String
-
+    
     enum CodingKeys: String, CodingKey {
         case user
         case statusCode = "status_code"
@@ -31,7 +31,7 @@ struct User: Codable {
     let address, jwt: String
     let imageurl, imageurlorg: String
     let token: Token
-
+    
     enum CodingKeys: String, CodingKey {
         case id, email, mobile
         case fullName = "full_name"
@@ -46,7 +46,7 @@ struct User: Codable {
 struct Token: Codable {
     let userID: Int
     let deviceType, jwt: String
-
+    
     enum CodingKeys: String, CodingKey {
         case userID = "user_id"
         case deviceType = "device_type"
@@ -61,7 +61,7 @@ struct Signup: Codable {
     let user: User1
     let statusCode: Int
     let key: String
-
+    
     enum CodingKeys: String, CodingKey {
         case user
         case statusCode = "status_code"
@@ -76,7 +76,7 @@ struct User1: Codable {
     let id: Int
     let jwt: String
     let imageurl, imageurlorg: String
-
+    
     enum CodingKeys: String, CodingKey {
         case email, mobile
         case fullName = "full_name"
@@ -84,3 +84,7 @@ struct User1: Codable {
         case lang, active, id, jwt, imageurl, imageurlorg
     }
 }
+
+
+
+

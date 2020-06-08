@@ -11,6 +11,10 @@ import Cosmos
 
 class DescriptionViewController: UIViewController {
     
+    
+    var placeName , descriptionText  , numOfRates , imageURL : String?
+    var ratAvrg : Double? = nil
+   
     var data:Datum?{
         didSet{
 //            if self.data !== nil{
@@ -75,6 +79,16 @@ class DescriptionViewController: UIViewController {
         pageControl.currentPage=0
         timer=Timer.scheduledTimer(timeInterval: 2.0, target: self, selector:#selector(changeImage), userInfo: nil, repeats: true)
         tableView.register(UINib(nibName:"CommentTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        print(placeName)
+        namePlace.text = placeName
+        print(descriptionText)
+        placeDescription.text = descriptionText
+        print(numOfRates)
+        numberOfRaters.text = " \(numOfRates!) تقييم "
+        print(ratAvrg)
+        userRate.rating = ratAvrg ?? 0.5
+        print(imageURL)
+
     }
     
     @objc func changeImage(){

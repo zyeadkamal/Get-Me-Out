@@ -13,13 +13,13 @@
 //    
 //    @IBOutlet weak var collectionView: UICollectionView!
 //    
-////    var categories = [
-////            Category(image: UIImage(named: "Entertainment")!, title: "Entertainment", colour: UIColor(red: 63/255.0, green: 71/255.0, blue: 88/255.0, alpha: 0.8)),
-////             Category(image: UIImage(named: "hotel")!, title: "Hotels", colour: UIColor(red: 240/255.0, green: 133/255.0, blue: 91/255.0, alpha: 0.8)),
-////             Category(image: UIImage(named: "malls")!, title: "Malls", colour: UIColor(red: 105/255.0, green: 80/255.0, blue: 227/255.0, alpha: 0.8)),
-////             Category(image: UIImage(named: "pyramids")!, title: "Tourism Places", colour: UIColor(red: 102/255.0, green: 102/255.0, blue: 102/255.0, alpha: 0.8)),
-////             Category(image: UIImage(named: "restaurant-erh-la-salle-principal-c9a3b")!, title: "Restaurent", colour: UIColor(red: 250/255.0, green: 192/255.0, blue: 130/255.0, alpha: 0.8))
-////        ]
+//    var categories = [
+//            Category(image: UIImage(named: "Entertainment")!, title: "Entertainment", colour: UIColor(red: 63/255.0, green: 71/255.0, blue: 88/255.0, alpha: 0.8)),
+//             Category(image: UIImage(named: "hotel")!, title: "Hotels", colour: UIColor(red: 240/255.0, green: 133/255.0, blue: 91/255.0, alpha: 0.8)),
+//             Category(image: UIImage(named: "malls")!, title: "Malls", colour: UIColor(red: 105/255.0, green: 80/255.0, blue: 227/255.0, alpha: 0.8)),
+//             Category(image: UIImage(named: "pyramids")!, title: "Tourism Places", colour: UIColor(red: 102/255.0, green: 102/255.0, blue: 102/255.0, alpha: 0.8)),
+//             Category(image: UIImage(named: "restaurant-erh-la-salle-principal-c9a3b")!, title: "Restaurent", colour: UIColor(red: 250/255.0, green: 192/255.0, blue: 130/255.0, alpha: 0.8))
+//        ]
 //    
 //    
 //    override func viewDidLoad() {
@@ -41,7 +41,7 @@
 //
 //extension HomeViewController:UICollectionViewDataSource,UICollectionViewDelegate{
 //    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        categories.count
+//       return categories.count
 //    }
 //    
 //    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

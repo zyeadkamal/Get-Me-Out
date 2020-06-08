@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04263A80248B81CC0055D807 /* CategoriesDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04263A7F248B81CC0055D807 /* CategoriesDM.swift */; };
+		049E2CCF248AE7CD00C8245C /* WelcomCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E2CCE248AE7CD00C8245C /* WelcomCategory.swift */; };
 		04A7176B24896D0800754949 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7176A24896D0800754949 /* ProfileViewController.swift */; };
 		04A7176D24896DDF00754949 /* tasnefatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7176C24896DDF00754949 /* tasnefatViewController.swift */; };
 		04A7176F24896E2D00754949 /* tasnefatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7176E24896E2D00754949 /* tasnefatCollectionViewCell.swift */; };
@@ -43,7 +45,7 @@
 		FA8C77DF24820D6E0042209A /* ExplainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C77DE24820D6E0042209A /* ExplainTableViewController.swift */; };
 		FA8C77E124820F000042209A /* ExplainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C77E024820F000042209A /* ExplainTableViewCell.swift */; };
 		FA8C77E324820F8B0042209A /* ExplainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C77E224820F8B0042209A /* ExplainCollectionViewCell.swift */; };
-		FAA9CA022487EDB4005E2C21 /* CategoryHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9CA012487EDB4005E2C21 /* CategoryHomePage.swift */; };
+		FAA9CA022487EDB4005E2C21 /* CategoryHomePageDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9CA012487EDB4005E2C21 /* CategoryHomePageDM.swift */; };
 		FAB6AD3B248403480086439E /* Date+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6AD3A248403480086439E /* Date+extensions.swift */; };
 		FAB6AD3D24840D2D0086439E /* NavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6AD3C24840D2D0086439E /* NavigationController+extension.swift */; };
 		FAB6AD3F2484105B0086439E /* TabBar+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6AD3E2484105B0086439E /* TabBar+extension.swift */; };
@@ -56,6 +58,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04263A7F248B81CC0055D807 /* CategoriesDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDM.swift; sourceTree = "<group>"; };
+		049E2CCE248AE7CD00C8245C /* WelcomCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomCategory.swift; sourceTree = "<group>"; };
 		04A7176A24896D0800754949 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04A7176C24896DDF00754949 /* tasnefatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tasnefatViewController.swift; sourceTree = "<group>"; };
 		04A7176E24896E2D00754949 /* tasnefatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tasnefatCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -96,7 +100,7 @@
 		FA8C77DE24820D6E0042209A /* ExplainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainTableViewController.swift; sourceTree = "<group>"; };
 		FA8C77E024820F000042209A /* ExplainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainTableViewCell.swift; sourceTree = "<group>"; };
 		FA8C77E224820F8B0042209A /* ExplainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainCollectionViewCell.swift; sourceTree = "<group>"; };
-		FAA9CA012487EDB4005E2C21 /* CategoryHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHomePage.swift; sourceTree = "<group>"; };
+		FAA9CA012487EDB4005E2C21 /* CategoryHomePageDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHomePageDM.swift; sourceTree = "<group>"; };
 		FAB6AD3A248403480086439E /* Date+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extensions.swift"; sourceTree = "<group>"; };
 		FAB6AD3C24840D2D0086439E /* NavigationController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationController+extension.swift"; sourceTree = "<group>"; };
 		FAB6AD3E2484105B0086439E /* TabBar+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBar+extension.swift"; sourceTree = "<group>"; };
@@ -227,8 +231,10 @@
 				FA68B8F1247EA9F200B7B9D6 /* Button+extensions.swift */,
 				FA11D14424851505003944B0 /* ServiceNetworking.swift */,
 				FA61CC7C248635990066454C /* SignInAndUp.swift */,
-				FAA9CA012487EDB4005E2C21 /* CategoryHomePage.swift */,
+				FAA9CA012487EDB4005E2C21 /* CategoryHomePageDM.swift */,
 				FAF5C18A2488E4E20013301F /* Helper.swift */,
+				049E2CCE248AE7CD00C8245C /* WelcomCategory.swift */,
+				04263A7F248B81CC0055D807 /* CategoriesDM.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -354,12 +360,14 @@
 				FA8C77E124820F000042209A /* ExplainTableViewCell.swift in Sources */,
 				FA68B8F4247ECB3500B7B9D6 /* EditProfileViewController.swift in Sources */,
 				FA68B8EC247E8EEC00B7B9D6 /* SignInViewController.swift in Sources */,
+				049E2CCF248AE7CD00C8245C /* WelcomCategory.swift in Sources */,
 				FA11D1472485679E003944B0 /* String+extensions.swift in Sources */,
 				FA3459A52431570000EE52A2 /* TypeCollectionViewCell.swift in Sources */,
 				FA61CC7D248635990066454C /* SignInAndUp.swift in Sources */,
 				FAB6AD3F2484105B0086439E /* TabBar+extension.swift in Sources */,
 				FAF7037D241C2F25008A872C /* DescriptionCollectionViewCell.swift in Sources */,
 				FA2C47A1243FB34E00551C85 /* DateComponent.swift in Sources */,
+				04263A80248B81CC0055D807 /* CategoriesDM.swift in Sources */,
 				04A7176F24896E2D00754949 /* tasnefatCollectionViewCell.swift in Sources */,
 				FA3459A3243155EF00EE52A2 /* TypeViewController.swift in Sources */,
 				FA8C77E324820F8B0042209A /* ExplainCollectionViewCell.swift in Sources */,
@@ -374,7 +382,7 @@
 				FAB6AD3B248403480086439E /* Date+extensions.swift in Sources */,
 				FA2ADA14241A4BD9003059F7 /* AppDelegate.swift in Sources */,
 				FA2ADA16241A4BD9003059F7 /* SceneDelegate.swift in Sources */,
-				FAA9CA022487EDB4005E2C21 /* CategoryHomePage.swift in Sources */,
+				FAA9CA022487EDB4005E2C21 /* CategoryHomePageDM.swift in Sources */,
 				FAF5C18B2488E4E20013301F /* Helper.swift in Sources */,
 				FA68B8F2247EA9F200B7B9D6 /* Button+extensions.swift in Sources */,
 				FA16061C2480070400FCE56E /* SettingsTableViewCell.swift in Sources */,

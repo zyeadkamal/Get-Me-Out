@@ -85,7 +85,8 @@ class ExplainTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+//        tableView.deselectRow(at: indexPath, animated: true)
+        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
     }
     
     
