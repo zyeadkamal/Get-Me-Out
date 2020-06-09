@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041BFF62248F7F3700B26941 /* سشءسش.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BFF61248F7F3700B26941 /* سشءسش.swift */; };
 		04263A80248B81CC0055D807 /* CategoriesDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04263A7F248B81CC0055D807 /* CategoriesDM.swift */; };
 		049E2CCF248AE7CD00C8245C /* WelcomCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E2CCE248AE7CD00C8245C /* WelcomCategory.swift */; };
 		04A7176B24896D0800754949 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7176A24896D0800754949 /* ProfileViewController.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041BFF61248F7F3700B26941 /* سشءسش.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "سشءسش.swift"; sourceTree = "<group>"; };
 		04263A7F248B81CC0055D807 /* CategoriesDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDM.swift; sourceTree = "<group>"; };
 		049E2CCE248AE7CD00C8245C /* WelcomCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomCategory.swift; sourceTree = "<group>"; };
 		04A7176A24896D0800754949 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				FA1606192480058A00FCE56E /* SettingsViewController.swift */,
 				04A7176A24896D0800754949 /* ProfileViewController.swift */,
 				04A7176C24896DDF00754949 /* tasnefatViewController.swift */,
+				041BFF61248F7F3700B26941 /* سشءسش.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				049E2CCF248AE7CD00C8245C /* WelcomCategory.swift in Sources */,
 				FA11D1472485679E003944B0 /* String+extensions.swift in Sources */,
 				FA3459A52431570000EE52A2 /* TypeCollectionViewCell.swift in Sources */,
+				041BFF62248F7F3700B26941 /* سشءسش.swift in Sources */,
 				FA61CC7D248635990066454C /* SignInAndUp.swift in Sources */,
 				FAB6AD3F2484105B0086439E /* TabBar+extension.swift in Sources */,
 				FAF7037D241C2F25008A872C /* DescriptionCollectionViewCell.swift in Sources */,
