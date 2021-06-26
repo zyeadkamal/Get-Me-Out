@@ -19,7 +19,6 @@ class tasnefatViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-//        DispatchQueue.main.async {
             Service.shared.fetchGenericData(urlString: "http://v1.khargny.com/api/category") { (info:Welcome) in
                 if info.statusCode == 200{
                     self.categories = info.categories
@@ -27,7 +26,6 @@ class tasnefatViewController: UIViewController {
                 }
             }
         }
-//    }
     
     
     
